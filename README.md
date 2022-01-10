@@ -37,6 +37,7 @@ For preprocesing, given that there is 69 atributes, two methods to diminish the 
 Non-PCA models:
 
 | **Model**        | **Hyperparametres**  | **Accuracy**  |
+| :-------------: |:-------------:| :-----:|
 | Logistic Regression | C=2 | 0.5594159113796576 |
 | SVCLinear | C=10 | 0.554380664652568
 | Random Forest Classifier | n_estimators=5  | 0.5488418932527693 |
@@ -47,6 +48,7 @@ Non-PCA models:
 PCA models:
 
 | **Model**        | **Hyperparametres**  | **Accuracy**  |
+| :-------------: |:-------------:| :-----:|
 | Logistic Regression | C= | :-----: |
 | SVCLinear | C=10 | 0.918429003021148 |
 | Random Forest Classifier (low max_depth) | trees=23  | 0.9928787224859732 |
