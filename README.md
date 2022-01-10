@@ -53,7 +53,7 @@ PCA models:
 | Ada Boost Classifier | n_estimators =  | :-----: |
 
 ## **Demo**
-
+Demo is allocated in the /demo folder, can be run with any python IDE or with python demo.py
 
 ## **Conclusions**
 
