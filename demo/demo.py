@@ -5,6 +5,9 @@
 
 from libraries import *
 
+
+warnings.filterwarnings("ignore")
+
 pd.set_option('display.float_format', lambda x: '%.5f' % x)
 pd.set_option('precision', 12);
 
@@ -18,21 +21,20 @@ dataset = load_dataset('customerTargeting.csv')
 data = dataset.values
 labels = dataset.columns.values
 
-pcaX = X
+X = data[:, [i for i in range(69)]]
+y = data[:, 70]
 
-pca = PCA()
-pca.fit(pcaX)
-pca_data = pca.transform(pcaX)
-per_var = pca.explained_variance_ratio_*100 
-cumulative_sum = np.cumsum(per_var)
 
-labels = ['PC'+str(i) for i in range(1, 8)]
-pca_variables = pd.DataFrame(pca_data[:,:7], columns=labels)
+#fem servir els atributs que hem vist abans amb major correlació amb target
+orX = data[:,[0,32,43,49,51,52,53,58,59,60,61,62,66,67]]
 
-x_t, x_v, y_t, y_v = train_test_split(pca_variables, y, train_size=0.7)
+ox_t, ox_v, oy_t, oy_v = train_test_split(orX, y, train_size=0.7)
 
-logireg = LogisticRegression(C=2.0, fit_intercept=True, penalty='l2', tol=0.001)
-logireg.fit(x_t, y_t)
+scaler = preprocessing.StandardScaler().fit(ox_t)
+X_scaled = scaler.transform(ox_t)
 
-clf = RandomForestClassifier(n_estimators=5,max_depth=10, random_state=0)
-clf.fit(x_t, y_t)
+svcLin = svm.LinearSVC(C=10, max_iter=10000)
+svcLin.fit(X_scaled,oy_t)
+#pickle.dump(svcLin, open("LinearSVC.sav", "wb"))
+print ("\n\nCorrect classification SVM Linear ", 0.7*100, "% of the data: ", svcLin.score(ox_v, oy_v))
+print(metrics.classification_report(oy_v, svcLin.predict(ox_v)))
