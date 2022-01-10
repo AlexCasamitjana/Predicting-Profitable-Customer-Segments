@@ -1,5 +1,2 @@
-# Ignore unconpresed dataset
-*.csv
-
 # Ignore temporal notebook
 *-checkpoint.ipynb

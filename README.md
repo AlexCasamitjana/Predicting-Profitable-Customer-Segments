@@ -30,14 +30,24 @@ Starting the preprocessing by plotting the distribution between the difrent cate
 Next, by doing a correlation histogram we can get a mild idea of what are the atributes most correlationated with "target". And by running some code below we can see them more easily.
 
 ## **Preprocessing**
-
-
+For preprocesing, given that there is 69 atributes, two methods to diminish the load of variables are employed. One of them is selecting the variables with highest correlation to the "target" atribute, and the other is an standard PCA aiming towards aproximately 95% of explained variance. Normalization of the data is also applied but will only be used on SVCLinear model, given that is the only where it gives an improvement of results.
 
 ## **Models Used**
 
-| **Model**        | **Hyperparametres**  | **Accuracy**  | **Time** |
-| :-------------: |:-------------:| :-----:| :-----:|
-| :-------------: |:-------------:| :-----:| :-----:|
-| :-------------: |:-------------:| :-----:| :-----:|
-| :-------------: |:-------------:| :-----:| :-----:|
-| :-------------: |:-------------:| :-----:| :-----:|
+Non-PCA models:
+| **Model**        | **Hyperparametres**  | **Accuracy**  |
+| Logistic Regression | C= | :-----: | :-----: |
+| SVCLinear | C= | :-----:| :-----: |
+| Random Forest Classifier | n_estimators =  | :-----: |
+| Histogram Gradient Boosting | :-------------: | :-----: |
+| Bagging Classifier (LogReg) | C= | :-----: |
+| Ada Boost Classifier | n_estimators =  | :-----: |
+
+PCA models:
+| **Model**        | **Hyperparametres**  | **Accuracy**  |
+| Logistic Regression | C= | :-----: | :-----: |
+| SVCLinear | C= | :-----:| :-----: |
+| Random Forest Classifier | n_estimators =  | :-----: |
+| Histogram Gradient Boosting | :-------------: | :-----: |
+| Bagging Classifier (LogReg) | C= | :-----: |
+| Ada Boost Classifier | n_estimators =  | :-----: |
