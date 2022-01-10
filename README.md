@@ -59,12 +59,12 @@ PCA models:
 
 
 ## **Demo**
-Demo is allocated in the /demo folder, can be run with any python IDE or with python demo.py
+Demo is allocated in the /demo folder, can be run with any python IDE or with "python demo.py" on console.
 
 ## **Conclusions**
 Its clear that the impact of PCA on the results is huge. Without using PCA most models perform arround 55% accuracy, and don't seem to improve past 60% under any circumstance. On the other hand, with PCA we instantly obtain near perfect results with much less cumputational effort. 
 
-In conclusion, the best performing models were all under PCA, and some worth mentioning are Logistic Regression, witch obtains perfect results very fast.
+In conclusion, the best performing models were all under PCA, and some worth mentioning are Logistic Regression, witch obtains perfect results very fast, and Histogram Gradient Boosting Classifier, witch consistently nets great results.
 
 ## **Concepts to be worked on in the future**
 ·Implementing hyperparameter search for all models.
