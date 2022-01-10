@@ -36,20 +36,20 @@ For preprocesing, given that there is 69 atributes, two methods to diminish the 
 
 Non-PCA models:
 
-| **Model**        | **Hyperparametres**  | **Accuracy**  |
+| **Model**        | **Hyperparameters**  | **Accuracy**  |
 | :-------------: |:-------------:| :-----:|
 | Logistic Regression | C=2 | 0.5594159113796576 |
 | SVCLinear | C=10 | 0.554380664652568
-| Random Forest Classifier | n_estimators=5  | 0.5488418932527693 |
+| Random Forest Classifier | n_estimators=100  | 0.5488418932527693 |
 | Histogram Gradient Boosting | - | 0.5453172205438066 |
 | Bagging Classifier (LogReg) | C=2 | 0.5574018126888217 |
 | Ada Boost Classifier | n_estimators=20  | 0.5785498489425982 |
 
 PCA models:
 
-| **Model**        | **Hyperparametres**  | **Accuracy**  |
+| **Model**        | **Hyperparameters**  | **Accuracy**  |
 | :-------------: |:-------------:| :-----:|
-| Logistic Regression | C= | :-----: |
+| Logistic Regression | C=0.10985411419875594 | 1.0 |
 | SVCLinear | C=10 | 0.918429003021148 |
 | Random Forest Classifier (low max_depth) | trees=23  | 0.9928787224859732 |
 | Random Forest Classifier (high max_depth) | trees=6  | 1.0 |
@@ -62,7 +62,9 @@ PCA models:
 Demo is allocated in the /demo folder, can be run with any python IDE or with python demo.py
 
 ## **Conclusions**
+Its clear that the impact of PCA on the results is huge. Without using PCA most models perform arround 55% accuracy, and don't seem to improve past 60% under any circumstance. On the other hand, with PCA we instantly obtain near perfect results with much less cumputational effort. 
 
+In conclusion, the best performing models were all under PCA, and some worth mentioning are Logistic Regression, witch obtains perfect results very fast.
 
 ## **Concepts to be worked on in the future**
 ·Implementing hyperparameter search for all models.
