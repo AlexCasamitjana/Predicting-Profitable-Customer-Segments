@@ -60,6 +60,7 @@ PCA models:
 
 ## **Demo**
 Demo is allocated in the /demo folder, can be run with any python IDE or with "python demo.py" on console.
+Libraries included.
 
 ## **Conclusions**
 Its clear that the impact of PCA on the results is huge. Without using PCA most models perform arround 55% accuracy, and don't seem to improve past 60% under any circumstance. On the other hand, with PCA we instantly obtain near perfect results with much less cumputational effort. 
