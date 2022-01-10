@@ -36,26 +36,29 @@ For preprocesing, given that there is 69 atributes, two methods to diminish the 
 
 Non-PCA models:
 | **Model**        | **Hyperparametres**  | **Accuracy**  |
-| Logistic Regression | C= | :-----: | :-----: |
-| SVCLinear | C= | :-----:|
-| Random Forest Classifier | n_estimators =  | :-----: |
-| Histogram Gradient Boosting | :-------------: | :-----: |
-| Bagging Classifier (LogReg) | C= | :-----: |
-| Ada Boost Classifier | n_estimators =  | :-----: |
+| Logistic Regression | C=2 | 0.5594159113796576 |
+| SVCLinear | C=10 | 0.554380664652568
+| Random Forest Classifier | n_estimators=5  | 0.5488418932527693 |
+| Histogram Gradient Boosting | - | 0.5453172205438066 |
+| Bagging Classifier (LogReg) | C=2 | 0.5574018126888217 |
+| Ada Boost Classifier | n_estimators=20  | 0.5785498489425982 |
 
 PCA models:
 | **Model**        | **Hyperparametres**  | **Accuracy**  |
 | Logistic Regression | C= | :-----: |
-| SVCLinear | C= | :-----:|
-| Random Forest Classifier | n_estimators =  | :-----: |
-| Histogram Gradient Boosting | :-------------: | :-----: |
-| Bagging Classifier (LogReg) | C= | :-----: |
-| Ada Boost Classifier | n_estimators =  | :-----: |
+| SVCLinear | C=10 | 0.918429003021148 |
+| Random Forest Classifier (low max_depth) | trees=23  | 0.9928787224859732 |
+| Random Forest Classifier (high max_depth) | trees=6  | 1.0 |
+| Histogram Gradient Boosting | - | 1.0 |
+| Bagging Classifier (LogReg) | C=2 | 1.0 |
+| Ada Boost Classifier | n_estimators=20  | 1.0 |
+
 
 ## **Demo**
 Demo is allocated in the /demo folder, can be run with any python IDE or with python demo.py
 
 ## **Conclusions**
+
 
 ## **Concepts to be worked on in the future**
 ·Implementing hyperparameter search for all models.
