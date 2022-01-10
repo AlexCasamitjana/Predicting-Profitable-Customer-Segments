@@ -19,8 +19,17 @@ The last column, named "target", is categorical, with 3 categories:
 As implied above the objective of the dataset is predicting the variable "target", that determinates witch one of the two groups stated above would be the most profitable, if any. 
 
 
-## **Preprocessing** 
-Given that this is a ficticious dataset, there is the benefit of the lack of _Nan_ and _None_ values that could have apeared if we worked with real data. 
+
+## **Analysis** 
+Once the dataset is imported, I do some basic checks by going over the data and using .describe() to get some basic information about the state of the dataset.
+
+Given that this is a ficticious dataset, there is a benefit in the lack of _Nan_ and _None_ values that could have apeared if it was produced with real data. 
+
+Starting the preprocessing by plotting the distribution between the difrent categories that target can fall in. It is clear that group 1 is more likely to be more profitable off the bat.
+
+Next, by doing a correlation histogram we can get a mild idea of what are the atributes most correlationated with "target". And by running some code below we can see them more easily.
+
+## **Preprocessing**
 
 
 
