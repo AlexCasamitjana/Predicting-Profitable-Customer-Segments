@@ -2,3 +2,4 @@ Required python packages:
 - numpy
 - pandas 
 - sklearn 
+- pickle
