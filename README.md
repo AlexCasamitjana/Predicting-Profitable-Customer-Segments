@@ -37,7 +37,7 @@ For preprocesing, given that there is 69 atributes, two methods to diminish the 
 Non-PCA models:
 | **Model**        | **Hyperparametres**  | **Accuracy**  |
 | Logistic Regression | C= | :-----: | :-----: |
-| SVCLinear | C= | :-----:| :-----: |
+| SVCLinear | C= | :-----:|
 | Random Forest Classifier | n_estimators =  | :-----: |
 | Histogram Gradient Boosting | :-------------: | :-----: |
 | Bagging Classifier (LogReg) | C= | :-----: |
@@ -45,9 +45,19 @@ Non-PCA models:
 
 PCA models:
 | **Model**        | **Hyperparametres**  | **Accuracy**  |
-| Logistic Regression | C= | :-----: | :-----: |
-| SVCLinear | C= | :-----:| :-----: |
+| Logistic Regression | C= | :-----: |
+| SVCLinear | C= | :-----:|
 | Random Forest Classifier | n_estimators =  | :-----: |
 | Histogram Gradient Boosting | :-------------: | :-----: |
 | Bagging Classifier (LogReg) | C= | :-----: |
 | Ada Boost Classifier | n_estimators =  | :-----: |
+
+## **Demo**
+
+
+## **Conclusions**
+
+## **Concepts to be worked on in the future**
+·Implementing hyperparameter search for all models.
+·Tryind diferent models, maybe also deep learning.
+·
