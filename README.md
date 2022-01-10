@@ -35,6 +35,7 @@ For preprocesing, given that there is 69 atributes, two methods to diminish the 
 ## **Models Used**
 
 Non-PCA models:
+
 | **Model**        | **Hyperparametres**  | **Accuracy**  |
 | Logistic Regression | C=2 | 0.5594159113796576 |
 | SVCLinear | C=10 | 0.554380664652568
@@ -44,6 +45,7 @@ Non-PCA models:
 | Ada Boost Classifier | n_estimators=20  | 0.5785498489425982 |
 
 PCA models:
+
 | **Model**        | **Hyperparametres**  | **Accuracy**  |
 | Logistic Regression | C= | :-----: |
 | SVCLinear | C=10 | 0.918429003021148 |
