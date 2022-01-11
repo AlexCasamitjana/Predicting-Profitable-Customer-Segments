@@ -70,4 +70,4 @@ In conclusion, the best performing models were all under PCA, and some worth men
 ## **Concepts to be worked on in the future**
 ·Implementing hyperparameter search for all models.
 ·Tryind diferent models, maybe also deep learning.
-·
+·Implement CrossValidation
